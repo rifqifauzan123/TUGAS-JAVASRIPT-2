@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="./style.css" />
+	<script defer src="./js/index.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<img src="nw-horizontal.png">
+	</div>
+	<form id="lowker">
+		<img src="logomark-sign.png">
+
+		<h4>Form Rekrutasi</h4>
+		<p>Isi data di bawah sesuai dengan identitas diri anda dan lowongan yang akan anda pilih</p>
+
+		<label for="fullname">Fullname: <span style="color:red">*</span></label>
+		<input type="text" id="fullname" name="fullname" placeholder="Masukkan Nama">
+
+		<label for="email">Email: <span style="color:red">*</span></label>
+		<input type="text" id="email" name="email" placeholder="Masukkan Email">
+
+		<label for="password">Phone Number: <span style="color:red">*</span></label>
+		<input type="number" id="phone" name="phone" placeholder="Masukkan Number">
+
+		<label for="password">Vacancy: <span style="color:red">*</span></label>
+		<select id="vacancy" name="vacancy">
+			<option disables selected value>
+				- Pilih Lowongan -
+			</option>
+		</select>
+		<div id="alertMessage"></div>
+		<label for="position">Position <span style="color:red">*</span></label>
+		<select class="form-control" name="posisi" id="posisi">
+			<option value="" disabled="" selected="">- Pilih Posisi -</option>
+		</select>
+		<input type="submit" value="Kirim">
+		<ul class="social">
+
+			<a href="https://instagram.com/neuronworks">
+				<img src="instagram.svg">
+			</a>
+
+			<a href="https://www.youtube.com/@NeuronworksIndonesia">
+				<img src="yt.svg">
+			</a>
+
+			<a href="https://twitter.com/neuronworks">
+				<img src="twitter.svg">
+			</a>
+
+			<a href="https://www.facebook.com/neuronworks/">
+				<img src="square-facebook.svg">
+			</a>
+		</ul>
+		<a class="web" href="https://www.neuronworks.co.id">
+			www.neuronworks.co.id
+		</a>
+	</form>
+
+	<table id="tableData">
+		<thead>
+			<div id="successMessage"></div>
+			<tr>
+				<th>Fullname</th>
+				<th>Email</th>
+				<th>Phone Number</th>
+				<th>Vacancy</th>
+				<th>Position</th>
+				<th> <button onclick="clearDataTable()">Clear Table</button></th>
+			</tr>
+		</thead>
+		<tbody id="bodyData"></tbody>
+	</table>
+
+	
+
+</body>
+
+</html>
